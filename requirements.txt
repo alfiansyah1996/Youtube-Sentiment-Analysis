@@ -3,5 +3,4 @@ pandas
 numpy
 google-api-python-client 
 nltk
-SentimentIntensityAnalyzer
-matplotlib.pyplot
+matplotlib
