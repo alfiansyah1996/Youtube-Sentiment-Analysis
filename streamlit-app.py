@@ -103,7 +103,7 @@ if st.button("Run"):
     st.markdown('''<div style="text-align: center;">
                         <strong>DATA VISUALIZATION</strong>
                         </div>''', unsafe_allow_html=True)
-    col1,col2, = st.columns([3,2])
+    col1,col2, = st.columns([3,2.4])
     with col1:
         import matplotlib.pyplot as plt
         st.set_option('deprecation.showPyplotGlobalUse', False)
