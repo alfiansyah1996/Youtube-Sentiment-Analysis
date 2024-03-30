@@ -1,5 +1,4 @@
 import streamlit as st
-st.set_theme('light')
 
 col1,col2 = st.columns([1,3])
 with col1:
@@ -110,7 +109,7 @@ if st.button("Run"):
         st.set_option('deprecation.showPyplotGlobalUse', False)
         colors = {'positive': 'tab:green', 'negative': 'tab:red', 'neutral': 'tab:blue'}
         sentiment_counts = df['sentiment_class'].value_counts().sort_index()
-        plt.figure(figsize=(6, 3))
+        plt.figure(figsize=(6, 2))
         for sentiment_class, count in sentiment_counts.items():
             plt.barh(sentiment_class, count, color=colors[sentiment_class])
             plt.text(count, sentiment_class, str(count), va='center')
