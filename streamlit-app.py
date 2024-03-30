@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_theme('light')
 
 col1,col2 = st.columns([1,3])
 with col1:
