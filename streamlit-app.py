@@ -82,6 +82,10 @@ if st.button("Run"):
     df['comment_text'] = df['comment_text'].str.lower()
     df['comment_text'] = df['comment_text'].apply(lambda x: re.sub(r'[^\w\s]', '', x))
     import nltk
+    try:
+        nltk.data.find('vader_lexicon')
+    except LookupError:
+        nltk.download('vader_lexicon')
     from nltk.sentiment.vader import SentimentIntensityAnalyzer
     model = SentimentIntensityAnalyzer()
     results = {}
