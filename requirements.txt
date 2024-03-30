@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+re
+googleapiclient.discovery
+nltk
+SentimentIntensityAnalyzer
+matplotlib.pyplot
